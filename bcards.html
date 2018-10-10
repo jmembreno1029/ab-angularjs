@@ -12,8 +12,13 @@
 </head>
 
 <body ng-app="addressbook">
-        <h1>Address Book</h1><br>
-        <button><a href="/index.html">View Address Book</a></button>
+        <br>
+        <h1>Contacts</h1><br>
+        <h2 class="center">Business Cards</h2>
+        <div class="center">
+                <button><a href="/index.html">View Address Book</a></button>
+        </div>
+        
         
         <div ng-controller="BcardsController">
                 <div ng-repeat="bcard in bcards">
