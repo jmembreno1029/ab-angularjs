@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Business Cards</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
+</head>
+
+<body ng-app="addressbook">
+        <h1>Address Book</h1><br>
+        <button><a href="/index.html">View Address Book</a></button>
+        
+        <div ng-controller="BcardsController">
+                <div ng-repeat="bcard in bcards">
+                        <div class="bCards">
+                        <span>{{bcard.CustomerID}}</span><br>
+                        <span>Company: {{bcard.CompanyName}}</span><br>
+                        <span>Contact: {{bcard.ContactName}}</span>, 
+                        <span>{{bcard.ContactTitle}}</span><br>
+                        <span>Address: {{bcard.Address}}</span>, 
+                        <span>{{bcard.City}}</span>                        
+                        <span>{{bcard.PostalCode}}</span>, 
+                        <span>{{bcard.Country}}</span><br>
+                        <span>Phone: {{bcard.Phone}}</span> |
+                        <span>Fax: {{bcard.Fax}}</span><br>
+                        <span>Email: {{bcard.Email}}</span>
+                        </div>
+                        
+                </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.4/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>

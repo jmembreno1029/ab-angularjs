@@ -7,63 +7,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Address Book</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 
 
 </head>
 
 <body ng-app="addressbook">
-    <h1>Address Book</h1>
-    <div ng-controller="ContactsController">
-    <table>
-        <tr>
-            <th>ID</th>
-            <th>Company</th>
-            <th>Contact</th>
-            <th>Title</th>
-            <th>Address</th>
-            <th>City</th>
-            <th>Email</th>
-            <th>Postal</th>
-            <th>Country</th>
-            <th>Phone</th>
-            <th>Fax</th>
-        </tr>
-        <tr ng-repeat="contact in contacts">
-            <td>{{contact.CustomerID}}</td>
-            <td>{{contact.CompanyName}}</td>
-            <td>{{contact.ContactName}}</td>
-            <td>{{contact.ContactTitle}}</td>
-            <td>{{contact.Address}}</td>
-            <td>{{contact.City}}</td>
-            <td>{{contact.Email}}</td>
-            <td>{{contact.PostalCode}}</td>
-            <td>{{contact.Country}}</td>
-            <td>{{contact.Phone}}</td>
-            <td>{{contact.Fax}}</td>
-            
-        </tr>
+    
+        <h1>Address Book</h1><br>
+        <div>
+            <button><a href="/bcards.html">View Business Cards</a></button>      
+        </div>
         
-    </table>
-    <!-- <ul>
-        <li ng-repeat="contact in contacts"></li>
-        <p>{{contacts.CustomerID}}</p>
-        
-    </ul>
-    //testing
-    <h2>Parsing XML data with AngularJS</h2>
-    <input type="text" ng-model="search" class="search-query" placeholder="Search">
-    <div ng-controller="addressbook">
-        <ol>
-            <li ng-repeat=></li>
-            <p>{{CustomerID}}</p>
-            
-        </ol> -->
-    </div>
 
-
+        <div ng-controller="ContactsController">
+            <div style="overflow-x:auto;">
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Company</th>
+                    <th>Contact</th>
+                    <th>Title</th>
+                    <th>Address</th>
+                    <th>City</th>
+                    <th>Email</th>
+                    <th>Postal</th>
+                    <th>Country</th>
+                    <th>Phone</th>
+                    <th>Fax</th>
+                </tr>
+                <tr ng-repeat="contact in contacts">
+                    <td>{{contact.CustomerID}}</td>
+                    <td>{{contact.CompanyName}}</td>
+                    <td>{{contact.ContactName}}</td>
+                    <td>{{contact.ContactTitle}}</td>
+                    <td>{{contact.Address}}</td>
+                    <td>{{contact.City}}</td>
+                    <td>{{contact.Email}}</td>
+                    <td>{{contact.PostalCode}}</td>
+                    <td>{{contact.Country}}</td>
+                    <td>{{contact.Phone}}</td>
+                    <td>{{contact.Fax}}</td>
+                </tr>
+            </table>
+        </div>
+        </div>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.4/angular.min.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.4/angular-route.js"></script>
     <script src="script.js"></script>
 
 </body>
