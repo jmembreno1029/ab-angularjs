@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Address Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
+
+</head>
+
+<body ng-app="addressbook">
+    <h1>Address Book</h1>
+    <div ng-controller="ContactsController">
+    <ul>
+        <li ng-repeat="contact in contacts">
+            <span>{{contact.CustomerID}}</span>
+            <span>{{contact.CompanyName}}</span>
+            <span>{{contact.ContactName}}</span>
+            <span>{{contact.ContactTitle}}</span>
+            <span>{{contact.Address}}</span>
+            <span>{{contact.City}}</span>
+            <span>{{contact.Email}}</span>
+            <span>{{contact.PostalCode}}</span>
+            <span>{{contact.Country}}</span>
+            <span>{{contact.Phone}}</span>
+            <span>{{contact.Fax}}</span>
+            
+        </li>
+        
+    </ul>
+    <!-- <ul>
+        <li ng-repeat="contact in contacts"></li>
+        <p>{{contacts.CustomerID}}</p>
+        
+    </ul>
+    //testing
+    <h2>Parsing XML data with AngularJS</h2>
+    <input type="text" ng-model="search" class="search-query" placeholder="Search">
+    <div ng-controller="addressbook">
+        <ol>
+            <li ng-repeat=></li>
+            <p>{{CustomerID}}</p>
+            
+        </ol> -->
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.4/angular.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
