@@ -1,4 +1,10 @@
 /* table styles */
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100%;
+}
+
 th, td {
     border: solid black 1px;
     text-align: justify;
